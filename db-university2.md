@@ -85,6 +85,9 @@ ORDER BY `departments`.`name`, `degrees`.`name`, `courses`.`name`;
    Matematica (54)
 
 ```sql
+SELECT
+    `teachers`.`name` AS `teachers_name`,
+    `teachers`.`surname` AS `teachers_surname`
 FROM `teachers`
 JOIN `courses`
     ON `teachers`.`id` = `courses`.`id`
